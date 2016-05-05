@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+	<meta charset="utf-8">
+	<title>Google Phone Gallery</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<!-- Be sure to load jQuery before all AngularJS scripts, otherwise AngularJS won't detect jQuery and animations will not work as expected. -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-resource/angular-resource.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/animations.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/services.js"></script>
+</head>
+<body>
+
+	<!-- turn the index.html template into what we call a "layout template". This is a template that is common for all views in our application. Other "partial templates" are then included into this layout template depending on the current "route"  -->
+	<div class="view-container">
+		<div ng-view class="view-frame"></div>
+	</div>
+
+</body>
+</html>
